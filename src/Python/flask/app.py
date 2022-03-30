@@ -14,13 +14,6 @@ app.secret_key = "abc222"
 
 logging.basicConfig(filename='/tmp/record.log', level=logging.WARNING, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
  
-@app.route('/blogs')
-def blog():
-    app.logger.info('Info level log')
-    app.logger.warning('Warning level log')
-    return f"Welcome to the Blog"
-
-
 # ----------------------------------------------------------------
 ### CRUD FOR TITANIC_TABLE.PASSENGER
 # ----------------------------------------------------------------
